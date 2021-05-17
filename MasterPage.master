@@ -1,0 +1,187 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head runat="server">
+  <title>Southern Blocking </title> 
+    <link rel="shortcut icon" type="image/png" href="assets/img/products/southernblockinglogo.png">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- CSS Global Compulsory-->
+    <link runat="server" rel="stylesheet" href="~/assets/plugins/bootstrap/css/bootstrap.css" />
+    <link runat="server" rel="stylesheet" href="~/assets/css/style.css" />
+    <link runat="server" rel="stylesheet" href="~/assets/css/headers/header1.css" />
+    <link runat="server" rel="stylesheet" href="~/assets/css/responsive.css" />
+    <link runat="server" rel="shortcut icon" href="~/favicon.ico" />        
+    <!-- CSS Implementing Plugins -->
+    <link runat="server" rel="stylesheet" href="~/assets/plugins/font-awesome/css/font-awesome.css" />
+    <!--<link runat="server" rel="stylesheet" href="~/assets/plugins/flexslider/flexslider.css" />   	
+    <link runat="server" rel="stylesheet" href="~/assets/plugins/bxslider/jquery.bxslider.css">--> 
+    <link runat="server" rel="stylesheet" href="~/assets/plugins/revolution_slider/rs-plugin/css/settings.css" type="text/css" media="screen">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/themes/orange.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/themes/headers/header1-orange.css" id="style_color_header_1">    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-50978617-1', 'milestone-nc.com');
+        ga('send', 'pageview');
+
+</script>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--=== Header ===-->
+        <div class="header">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                   <h2 style="color-rendering:auto; color: #FFFFFF;"> Southern Blocking </h2>
+                            &nbsp</></div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a runat="server" href="~/" class="dropdown-toggle" data-toggle="" data-hover="" data-delay="0" data-close-others="false">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a runat="server" href="~/products.aspx" class="dropdown-toggle" data-toggle="" data-hover="" data-delay="0" data-close-others="false">
+                            Products
+                        </a>
+                    </li>
+
+                     <li>
+                        <a runat="server" href="~/Projects.aspx" class="dropdown-toggle" data-toggle="" data-hover="" data-delay="0" data-close-others="false">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a runat="server" href="~/safety.aspx" class="dropdown-toggle" data-toggle="" data-hover="" data-delay="0" data-close-others="false">
+                            Demo Videos
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a runat="server" href="~/contact.aspx" class="dropdown-toggle" data-toggle="" data-hover="" data-delay="0" data-close-others="false">
+                            Contact
+                        </a>
+                    </li>  
+                    <li>
+                        <a href="#">980-722-1772</a>
+                    </li>                  
+                </ul>
+            
+
+            </div><!-- /navbar-collapse -->
+                    
+                </div>
+            </div>
+        </div>
+        <!--/header-->
+        <!--=== End Header ===-->
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <!--=== Footer ===-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 md-margin-bottom-40">
+                        <!-- About -->
+                        <div class="headline">
+                            <h2>About</h2>
+                        </div>
+                        <p class="margin-bottom-25 md-margin-bottom-40">Southern Blocking manufactures Fire Rated Wood Blocking, Zee-Klips, and Low Wall Supports. We strive to exceed every expectation through the quality of our products and service.</p>          
+                        <div id="social-media-icons">
+                          <a href="https://www.facebook.com/southernblocking/" target="_blank"><img src="assets/img/icons/social/facebuke.png" height="50" /></a>
+                            &nbsp;
+                            <a href="https://www.youtube.com/channel/UCyYw35FQAWCpF4xR-NW9TCw" target="_blank"><img src="assets/img/icons/social/yewtube.png" height="50" /></a>
+                            &nbsp;
+                             <a href="https://www.instagram.com/southernblocking/" target="_blank"><img src="assets/img/icons/social/oldinsta.png" height="50" /></a>
+                        </div>
+                    </div>
+                    <!--/col-md-6-->
+
+                    <div class="col-md-6">
+                        <!-- Monthly Newsletter -->
+                        <div class="headline">
+                            <h2>Contact Us</h2>
+                        </div>
+                        <address class="md-margin-bottom-40">
+
+                            Southern Blocking, LLC<br />
+                            112 S 12th Ave<br />
+                            Lanett, AL 36863<br />
+                            <br />
+                            <br />
+                            <a href="#"><i class="icon-phone-sign"></i> 980-722-1772</a><br />
+                            <a href="mailto:sales@southernblocking.com"><i class="icon-envelope-alt"></i> sales@southernblocking.com</a>
+                         </address>
+                    </div>
+                    <!--/col-md-6-->
+                </div>
+                <!--/row-->
+            </div>
+            <!--/container-->
+        </div>
+        <!--/footer-->
+        <!--=== End Footer ===-->
+
+        <!--=== Copyright ===-->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright-space">
+                            <%=DateTime.Now.Year.ToString%> &copy; Southern Blocking, LLC. ALL Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a runat="server" href="~/" title="Home">
+                           
+                        </a>
+                    </div>
+                </div>
+                <!--/row-->
+            </div>
+            <!--/container-->
+        </div>
+        <!--/copyright-->
+        <!--=== End Copyright ===-->
+        
+    </form>
+</body>
+</html>
